@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Product 1 — ClassicShop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Главная страница</a>
+      <nav class="nav">
+        <a href="login.html">Войти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding:28px 20px;">
+    <div style="display:grid;grid-template-columns:420px 1fr;gap:24px;align-items:start">
+      <div class="card">
+        <img src="https://via.placeholder.com/800x480?text=Product+1+Large" alt="Product 1">
+        <p class="muted" style="margin-top:10px">SKU: P1-CLASSIC</p>
+      </div>
+
+      <div>
+        <h1>265/40 ZR20 (Передняя ось)</h1>
+        <p style="font-size:1.25rem;margin:18px 0;font-weight:700">$99</p>
+
+        <p>
+        Ширина профиля 265мм.
+        Диаметр диска 20 дюймов. 
+        Скоростной индекс Y (300+км/ч).
+        Чуть мягче,отлично сбалансированная, дает хорошее сцепление.
+        Для большей информации звонить по номеру телефона.
+        </p>
+
+        <div style="margin-top:18px">
+          <label for="qty">Количество</label>
+          <select id="qty" style="margin-left:8px;padding:8px;border-radius:6px;">
+            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+          </select>
+        </div>
+
+        <div style="margin-top:20px">
+          <a class="btn" href="catalog.html" style="margin-left:8px">Назад</a>
+          <a class="btn" href="addcard.html">Купить</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><small><h3>WhatsApp 90 (545) 856 62 86 Istanbul, Turkey</h3></small></div>
+  </footer>
+
+  <script>document.getElementById('year4').textContent = new Date().getFullYear();</script>
+</body>
+</html>

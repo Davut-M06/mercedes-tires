@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sign In — ClassicShop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Главная страница</a>
+      <nav class="nav">
+        <a href="catalog.html">Catalog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="form-wrap">
+      <h2>Войти</h2>
+      <form action="#" method="post" id="loginForm" onsubmit="return false;">
+        <div class="form-field">
+          <label for="email">Адрес электронной почты</label>
+          <input id="email" name="email" type="email" required placeholder="Введите электронную почту">
+        </div>
+        <div class="form-field">
+          <label for="password">Пароль</label>
+          <input id="password" name="password" type="password" required placeholder="Введите пароль">
+        </div>
+
+        <div class="form-actions">
+          <div class="small-muted"><input type="checkbox" id="remember"> <label for="remember" style="display:inline;font-weight:600">Запомнить меня</label></div>
+          <button class="btn" type="submit" onclick="fakeSignIn()">Войти</button>
+        </div>
+      </form>
+      <a href="registr.html">Регистрация</a></p>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById('year3').textContent = new Date().getFullYear();
+    function fakeSignIn(){
+      // demo behavior only
+      alert('This is a demo sign-in. Implement real authentication on the server.');
+    }
+  </script>
+</body>
+</html>
